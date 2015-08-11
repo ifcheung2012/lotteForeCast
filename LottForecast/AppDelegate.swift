@@ -8,18 +8,65 @@
 
 import UIKit
 import CoreData
+import DrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var drawerController: DrawerController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        initDrawer()
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
 
+    func initDrawer(){
+        
+        let sideLeftViewController = SideLeftTableViewController()
+        let centerViewController = CenterViewController()
+        
+        let naviColor:UIColor = UIColor(red: 0.92, green: 0.25, blue: 0.24, alpha: 1)
+        
+        let leftsideColor:UIColor = UIColor.darkGrayColor()
+        
+        let navigationController = UINavigationController(rootViewController: centerViewController)
+        navigationController.restorationIdentifier = "CenterNavigationControllerRestorationKey"
+        navigationController.navigationBar.barTintColor = naviColor
+        navigationController.navigationBar.tintColor = naviColor
+        navigationController.navigationBar.shadowImage = UIImage()
+        
+        let sideLeftNavController = UINavigationController(rootViewController: sideLeftViewController)
+        sideLeftNavController.restorationIdentifier = "LeftNavigationControllerRestorationKey"
+        sideLeftNavController.navigationBar.barTintColor = leftsideColor
+        sideLeftNavController.navigationBar.tintColor = leftsideColor
+        sideLeftNavController.navigationBar.shadowImage = UIImage()
+        
+        
+        self.drawerController = DrawerController(centerViewController: navigationController, leftDrawerViewController: sideLeftViewController)
+        
+        self.drawerController.showsShadows = true
+        self.drawerController.restorationIdentifier = "Drawer"
+        self.drawerController.maximumRightDrawerWidth = 200.0
+        
+        
+        
+//        self.drawerController.drawerVisualStateBlock = { (drawerController, drawerSide, percentVisible) in
+//            let block = ExampleDrawerVisualStateManager.sharedManager.drawerVisualStateBlockForDrawerSide(drawerSide)
+//            block?(drawerController, drawerSide, percentVisible)
+//        }
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let tintColor = UIColor(red: 29 / 255, green: 173 / 255, blue: 234 / 255, alpha: 1.0)
+        self.window?.tintColor = tintColor
+        
+        self.window?.rootViewController = self.drawerController
+    }
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

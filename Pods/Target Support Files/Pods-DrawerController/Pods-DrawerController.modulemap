@@ -1,0 +1,6 @@
+framework module DrawerController {
+  umbrella header "Pods-DrawerController-umbrella.h"
+
+  export *
+  module * { export * }
+}
