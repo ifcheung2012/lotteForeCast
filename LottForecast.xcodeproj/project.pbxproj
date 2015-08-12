@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		380126641B76F11B00B5147B /* ForecastResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380126631B76F11B00B5147B /* ForecastResultViewController.swift */; };
 		380126661B76F33A00B5147B /* ScrollPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380126651B76F33A00B5147B /* ScrollPager.swift */; };
+		381951111B7B0D6100A16C13 /* DrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388EADF11B7A106D00EF321B /* DrawerController.framework */; };
+		381951121B7B0D6100A16C13 /* DrawerController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 388EADF11B7A106D00EF321B /* DrawerController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		385589AC1B7593F300DDCE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589AB1B7593F300DDCE20 /* AppDelegate.swift */; };
 		385589AF1B7593F300DDCE20 /* LottForecast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 385589AD1B7593F300DDCE20 /* LottForecast.xcdatamodeld */; };
 		385589B11B7593F300DDCE20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589B01B7593F300DDCE20 /* ViewController.swift */; };
@@ -21,12 +23,24 @@
 		385589D51B75B66800DDCE20 /* SideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589D41B75B66800DDCE20 /* SideTableViewCell.swift */; };
 		385589D71B75BD7100DDCE20 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589D61B75BD7100DDCE20 /* CenterViewController.swift */; };
 		385589E91B75E2B600DDCE20 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589E81B75E2B600DDCE20 /* BaseTableViewCell.swift */; };
-		388EADF91B7A117D00EF321B /* DrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388EADF11B7A106D00EF321B /* DrawerController.framework */; };
-		388EADFA1B7A117D00EF321B /* DrawerController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 388EADF11B7A106D00EF321B /* DrawerController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38A7C5D01B796AD90007CFF0 /* HMSegmentedControl in Resources */ = {isa = PBXBuildFile; fileRef = 38A7C5CF1B796AD90007CFF0 /* HMSegmentedControl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3819510E1B7B0D2800A16C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEF01351AFEE4FF00DFDF7F;
+			remoteInfo = DrawerController;
+		};
+		381951131B7B0D6100A16C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEF01351AFEE4FF00DFDF7F;
+			remoteInfo = DrawerController;
+		};
 		385589BF1B7593F300DDCE20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3855899E1B7593F200DDCE20 /* Project object */;
@@ -48,23 +62,16 @@
 			remoteGlobalIDString = FAEF01411AFEE50000DFDF7F;
 			remoteInfo = DrawerControllerTests;
 		};
-		388EADFB1B7A117D00EF321B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FAEF01351AFEE4FF00DFDF7F;
-			remoteInfo = DrawerController;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		388EADFD1B7A117D00EF321B /* Embed Frameworks */ = {
+		381951151B7B0D6100A16C13 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				388EADFA1B7A117D00EF321B /* DrawerController.framework in Embed Frameworks */,
+				381951121B7B0D6100A16C13 /* DrawerController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				388EADF91B7A117D00EF321B /* DrawerController.framework in Frameworks */,
+				381951111B7B0D6100A16C13 /* DrawerController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +260,13 @@
 				385589A41B7593F300DDCE20 /* Resources */,
 				7053DCD7900472BAAF38DCAC /* Embed Pods Frameworks */,
 				9D488D865C69DF701C2233D7 /* Copy Pods Resources */,
-				388EADFD1B7A117D00EF321B /* Embed Frameworks */,
+				381951151B7B0D6100A16C13 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				388EADFC1B7A117D00EF321B /* PBXTargetDependency */,
+				3819510F1B7B0D2800A16C13 /* PBXTargetDependency */,
+				381951141B7B0D6100A16C13 /* PBXTargetDependency */,
 			);
 			name = LottForecast;
 			productName = LottForecast;
@@ -442,15 +450,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3819510F1B7B0D2800A16C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DrawerController;
+			targetProxy = 3819510E1B7B0D2800A16C13 /* PBXContainerItemProxy */;
+		};
+		381951141B7B0D6100A16C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DrawerController;
+			targetProxy = 381951131B7B0D6100A16C13 /* PBXContainerItemProxy */;
+		};
 		385589C01B7593F300DDCE20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 385589A51B7593F300DDCE20 /* LottForecast */;
 			targetProxy = 385589BF1B7593F300DDCE20 /* PBXContainerItemProxy */;
-		};
-		388EADFC1B7A117D00EF321B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DrawerController;
-			targetProxy = 388EADFB1B7A117D00EF321B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -565,7 +578,7 @@
 				INFOPLIST_FILE = LottForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LottForecast/LottForecast-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = LottForecast/HMSegmentedControl/HMSegmentedControl.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -580,7 +593,7 @@
 				INFOPLIST_FILE = LottForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LottForecast/LottForecast-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = LottForecast/HMSegmentedControl/HMSegmentedControl.h;
 			};
 			name = Release;
 		};

@@ -48,6 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         sideLeftNavController.navigationBar.shadowImage = UIImage()
         
         
+//        self.drawerController = DrawerController(centerViewController: navigationController, leftDrawerViewController: sideLeftNavController)
+        
         self.drawerController = DrawerController(centerViewController: navigationController, leftDrawerViewController: sideLeftViewController)
         
         self.drawerController.showsShadows = true
