@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9BABE3A5C4457B9BCB1EED /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F056973DB47442AA7CAA47F2 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		380126641B76F11B00B5147B /* ForecastResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380126631B76F11B00B5147B /* ForecastResultViewController.swift */; };
 		380126661B76F33A00B5147B /* ScrollPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380126651B76F33A00B5147B /* ScrollPager.swift */; };
-		381951111B7B0D6100A16C13 /* DrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388EADF11B7A106D00EF321B /* DrawerController.framework */; };
-		381951121B7B0D6100A16C13 /* DrawerController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 388EADF11B7A106D00EF321B /* DrawerController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		385589AC1B7593F300DDCE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589AB1B7593F300DDCE20 /* AppDelegate.swift */; };
 		385589AF1B7593F300DDCE20 /* LottForecast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 385589AD1B7593F300DDCE20 /* LottForecast.xcdatamodeld */; };
 		385589B11B7593F300DDCE20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589B01B7593F300DDCE20 /* ViewController.swift */; };
@@ -27,40 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3819510E1B7B0D2800A16C13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FAEF01351AFEE4FF00DFDF7F;
-			remoteInfo = DrawerController;
-		};
-		381951131B7B0D6100A16C13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = FAEF01351AFEE4FF00DFDF7F;
-			remoteInfo = DrawerController;
-		};
 		385589BF1B7593F300DDCE20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3855899E1B7593F200DDCE20 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 385589A51B7593F300DDCE20;
 			remoteInfo = LottForecast;
-		};
-		388EADF01B7A106D00EF321B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FAEF01361AFEE4FF00DFDF7F;
-			remoteInfo = DrawerController;
-		};
-		388EADF21B7A106D00EF321B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FAEF01411AFEE50000DFDF7F;
-			remoteInfo = DrawerControllerTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,7 +42,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				381951121B7B0D6100A16C13 /* DrawerController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07BB802CC511DBF1562AE90E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		380126631B76F11B00B5147B /* ForecastResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResultViewController.swift; sourceTree = "<group>"; };
 		380126651B76F33A00B5147B /* ScrollPager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollPager.swift; path = ../../../Xcode/tableviewtest1/tableviewtest1/ScrollPager.swift; sourceTree = "<group>"; };
 		385589A61B7593F300DDCE20 /* LottForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,12 +70,10 @@
 		385589D81B75C50F00DDCE20 /* DrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawerController.framework; path = "Pods/../build/Debug-iphoneos/Pods/DrawerController.framework"; sourceTree = "<group>"; };
 		385589E61B75C5E700DDCE20 /* DrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawerController.framework; path = "Pods/../build/Debug-iphoneos/Pods/DrawerController.framework"; sourceTree = "<group>"; };
 		385589E81B75E2B600DDCE20 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DrawerController.xcodeproj; path = "../../Xcode/DrawerController-master/DrawerController.xcodeproj"; sourceTree = "<group>"; };
 		38A7C5CF1B796AD90007CFF0 /* HMSegmentedControl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HMSegmentedControl; sourceTree = "<group>"; };
 		38A7C5D11B796C5D0007CFF0 /* LottForecast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LottForecast-Bridging-Header.h"; sourceTree = "<group>"; };
-		3BD7C211E6267A9093698721 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		5BD2ABEE53A733CAF90755D6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		D445B9972EE72AC8D7EB9E86 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7895447EF89E3ECEC08D8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F056973DB47442AA7CAA47F2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				381951111B7B0D6100A16C13 /* DrawerController.framework in Frameworks */,
+				1B9BABE3A5C4457B9BCB1EED /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +106,11 @@
 		3855899D1B7593F200DDCE20 = {
 			isa = PBXGroup;
 			children = (
-				388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */,
 				385589A81B7593F300DDCE20 /* LottForecast */,
 				385589C11B7593F300DDCE20 /* LottForecastTests */,
 				385589A71B7593F300DDCE20 /* Products */,
-				9077FE318FBEB70A664B9841 /* Pods */,
 				642AF55484C3085E8155D2DA /* Frameworks */,
+				61A403D69C8C79DD1851EC91 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,13 +187,13 @@
 			name = TableViewHelpers;
 			sourceTree = "<group>";
 		};
-		388EADEC1B7A106D00EF321B /* Products */ = {
+		61A403D69C8C79DD1851EC91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				388EADF11B7A106D00EF321B /* DrawerController.framework */,
-				388EADF31B7A106D00EF321B /* DrawerControllerTests.xctest */,
+				7D7895447EF89E3ECEC08D8D /* Pods.debug.xcconfig */,
+				07BB802CC511DBF1562AE90E /* Pods.release.xcconfig */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		642AF55484C3085E8155D2DA /* Frameworks */ = {
@@ -233,18 +201,9 @@
 			children = (
 				385589E61B75C5E700DDCE20 /* DrawerController.framework */,
 				385589D81B75C50F00DDCE20 /* DrawerController.framework */,
-				D445B9972EE72AC8D7EB9E86 /* Pods.framework */,
+				F056973DB47442AA7CAA47F2 /* Pods.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9077FE318FBEB70A664B9841 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5BD2ABEE53A733CAF90755D6 /* Pods.debug.xcconfig */,
-				3BD7C211E6267A9093698721 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +224,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3819510F1B7B0D2800A16C13 /* PBXTargetDependency */,
-				381951141B7B0D6100A16C13 /* PBXTargetDependency */,
 			);
 			name = LottForecast;
 			productName = LottForecast;
@@ -321,12 +278,6 @@
 			mainGroup = 3855899D1B7593F200DDCE20;
 			productRefGroup = 385589A71B7593F300DDCE20 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 388EADEC1B7A106D00EF321B /* Products */;
-					ProjectRef = 388EADEB1B7A106D00EF321B /* DrawerController.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				385589A51B7593F300DDCE20 /* LottForecast */,
@@ -334,23 +285,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		388EADF11B7A106D00EF321B /* DrawerController.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = DrawerController.framework;
-			remoteRef = 388EADF01B7A106D00EF321B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		388EADF31B7A106D00EF321B /* DrawerControllerTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DrawerControllerTests.xctest;
-			remoteRef = 388EADF21B7A106D00EF321B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		385589A41B7593F300DDCE20 /* Resources */ = {
@@ -450,16 +384,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3819510F1B7B0D2800A16C13 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DrawerController;
-			targetProxy = 3819510E1B7B0D2800A16C13 /* PBXContainerItemProxy */;
-		};
-		381951141B7B0D6100A16C13 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DrawerController;
-			targetProxy = 381951131B7B0D6100A16C13 /* PBXContainerItemProxy */;
-		};
 		385589C01B7593F300DDCE20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 385589A51B7593F300DDCE20 /* LottForecast */;
@@ -570,7 +494,7 @@
 		};
 		385589C91B7593F300DDCE20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BD2ABEE53A733CAF90755D6 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 7D7895447EF89E3ECEC08D8D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -585,7 +509,7 @@
 		};
 		385589CA1B7593F300DDCE20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BD7C211E6267A9093698721 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 07BB802CC511DBF1562AE90E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
