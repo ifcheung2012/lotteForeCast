@@ -49,7 +49,9 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'DrawerController.framework'
+  install_framework 'HMSegmentedControl.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'DrawerController.framework'
+  install_framework 'HMSegmentedControl.framework'
 fi

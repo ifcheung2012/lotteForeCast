@@ -22,7 +22,8 @@
 		385589D51B75B66800DDCE20 /* SideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589D41B75B66800DDCE20 /* SideTableViewCell.swift */; };
 		385589D71B75BD7100DDCE20 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589D61B75BD7100DDCE20 /* CenterViewController.swift */; };
 		385589E91B75E2B600DDCE20 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385589E81B75E2B600DDCE20 /* BaseTableViewCell.swift */; };
-		38A7C5D01B796AD90007CFF0 /* HMSegmentedControl in Resources */ = {isa = PBXBuildFile; fileRef = 38A7C5CF1B796AD90007CFF0 /* HMSegmentedControl */; };
+		38ADC3541B8083C20055FA3F /* DrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38ADC3521B8083C20055FA3F /* DrawerController.framework */; };
+		38ADC3551B8083C20055FA3F /* HMSegmentedControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38ADC3531B8083C20055FA3F /* HMSegmentedControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +71,9 @@
 		385589D81B75C50F00DDCE20 /* DrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawerController.framework; path = "Pods/../build/Debug-iphoneos/Pods/DrawerController.framework"; sourceTree = "<group>"; };
 		385589E61B75C5E700DDCE20 /* DrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawerController.framework; path = "Pods/../build/Debug-iphoneos/Pods/DrawerController.framework"; sourceTree = "<group>"; };
 		385589E81B75E2B600DDCE20 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		38A7C5CF1B796AD90007CFF0 /* HMSegmentedControl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HMSegmentedControl; sourceTree = "<group>"; };
 		38A7C5D11B796C5D0007CFF0 /* LottForecast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LottForecast-Bridging-Header.h"; sourceTree = "<group>"; };
+		38ADC3521B8083C20055FA3F /* DrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawerController.framework; path = "Pods/../build/Debug-iphoneos/Pods/DrawerController.framework"; sourceTree = "<group>"; };
+		38ADC3531B8083C20055FA3F /* HMSegmentedControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HMSegmentedControl.framework; path = "Pods/../build/Debug-iphoneos/Pods/HMSegmentedControl.framework"; sourceTree = "<group>"; };
 		7D7895447EF89E3ECEC08D8D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F056973DB47442AA7CAA47F2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38ADC3541B8083C20055FA3F /* DrawerController.framework in Frameworks */,
+				38ADC3551B8083C20055FA3F /* HMSegmentedControl.framework in Frameworks */,
 				1B9BABE3A5C4457B9BCB1EED /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +130,6 @@
 		385589A81B7593F300DDCE20 /* LottForecast */ = {
 			isa = PBXGroup;
 			children = (
-				38A7C5CF1B796AD90007CFF0 /* HMSegmentedControl */,
 				385589CF1B75B29500DDCE20 /* TableViewHelpers */,
 				385589AB1B7593F300DDCE20 /* AppDelegate.swift */,
 				385589CE1B75B27E00DDCE20 /* ViewControllers */,
@@ -199,6 +202,8 @@
 		642AF55484C3085E8155D2DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38ADC3521B8083C20055FA3F /* DrawerController.framework */,
+				38ADC3531B8083C20055FA3F /* HMSegmentedControl.framework */,
 				385589E61B75C5E700DDCE20 /* DrawerController.framework */,
 				385589D81B75C50F00DDCE20 /* DrawerController.framework */,
 				F056973DB47442AA7CAA47F2 /* Pods.framework */,
@@ -291,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A7C5D01B796AD90007CFF0 /* HMSegmentedControl in Resources */,
 				385589B41B7593F300DDCE20 /* Main.storyboard in Resources */,
 				385589B91B7593F300DDCE20 /* LaunchScreen.xib in Resources */,
 				385589B61B7593F300DDCE20 /* Images.xcassets in Resources */,
@@ -498,7 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/build/Debug-iphoneos/Pods";
 				INFOPLIST_FILE = LottForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/build/Debug-iphoneos/Pods";
 				INFOPLIST_FILE = LottForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

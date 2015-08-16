@@ -466,6 +466,7 @@ public class DrawerController: UIViewController, UIGestureRecognizerDelegate {
     :returns: The newly-initialized drawer container view controller.
     */
     public init(centerViewController: UIViewController, leftDrawerViewController: UIViewController?, rightDrawerViewController: UIViewController?) {
+        
         super.init(nibName: nil, bundle: nil)
         
         self.centerViewController = centerViewController
